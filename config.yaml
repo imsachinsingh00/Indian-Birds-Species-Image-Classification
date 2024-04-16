@@ -1,0 +1,14 @@
+classifier_head:
+  in_features: 768
+  out_features: 25
+loss_function: CrossEntropyLoss
+optimizer:
+  lr: 0.001
+  name: Adam
+pretrained_vit_weights: DEFAULT
+training_parameters:
+  batch_size: 32
+  device: cuda
+  epochs: 10
+  num_workers: 12
+transformer_model: vit_b_16
